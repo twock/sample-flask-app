@@ -23,7 +23,7 @@ Run the following command:
 ```bash
 curl --silent \
 https://raw.githubusercontent.com/thoughtworks/talisman/master/global_install_scripts/install.bash \
-  /tmp/install_talisman.bash && /bin/bash /tmp/install_talisman.bash
+  -o /tmp/install_talisman.bash && /bin/bash /tmp/install_talisman.bash
 ```
 
 This command comes from the official [Talisman instructions](https://github.com/thoughtworks/talisman#installation-as-a-global-hook-template
@@ -45,7 +45,7 @@ For example:
 
 From the command prompt, enter `talisman`. It should return a list of command options.
 
-If this step fails, verify that Talisman has set an environment variable called `$TALISMAN_HOME` in your bash profile that points to the home path of Talisman on your system. 
+If this step fails, verify that Talisman has set an environment variable called `$TALISMAN_HOME` in your bash profile that points to the home path of Talisman on your system.
 
 This needs to be present in your resource file (`.bashrc`, `.bash_profile`, `.zshrc`, etc) for Talisman to run. You may need to either source your bash profile or restart the terminal to make sure it is there.
 
