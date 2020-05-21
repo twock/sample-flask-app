@@ -11,6 +11,12 @@ services:
      - postgres
     command: /usr/src/app/start-app.sh
 
+  hawkeye:
+    image: stono/hawkeye
+    command: scan --target /usr/src/app
+    volumes:
+      - ./web:/usr/src/app
+
   postgres:
     image: postgres:12.2
     ports:
