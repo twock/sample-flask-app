@@ -13,9 +13,9 @@ services:
 
   hawkeye:
     image: stono/hawkeye
-    command: scan --target /usr/src/app
+    command: /usr/src/app
     volumes:
-      - ./web:/usr/src/app
+      - ./web:/target
 
   postgres:
     image: postgres:12.2
